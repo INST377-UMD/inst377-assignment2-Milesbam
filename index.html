@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>INST377 - Activities</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>INST377 - Activities</h1>
+    <nav>
+      <a href="index.html">Home</a> ·
+      <a href="stocks.html">Stocks</a> ·
+      <a href="dogs.html">Dogs</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>These are some different activities we can try!</h2>
+
+    <div class="buttons">
+      <a href="stocks.html">
+        <button class="button-49" role="button">Stocks</button></a>
+      <a href="dogs.html">
+        <button class="button-49" role="button">Dogs</button></a>
+    </div>
+
+    <div class="quote-box" id="quoteBox">
+      <h3>Quote of the Page Load</h3>
+      <p id="quoteText">Loading...</p>
+        <a href="https://zenquotes.io/" target="_blank" rel="noopener noreferrer"></a>
+      </p>
+      
+    </div>
+  </main>
+
+  <div class="voice-box">
+    <h2>In this web page there are options to Navigate using Audio!</h2>
+    <ul>
+      <li>Navigate to a Different Page: Say: <strong>Go to &lt;page&gt;</strong> (e.g., "Go to dogs")</li>
+      <li>Change the Page Color: Say: <strong>Change the color to &lt;color&gt;</strong></li>
+      <li>Say Hello Back to you! Say: <strong>Hello</strong></li>
+    </ul>
+    <button onclick="annyang.start()">Turn On Listening</button>
+    <button onclick="annyang.abort()">Turn Off Listening</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="script.js"></script>
+  <script src="voice.js"></script>
+</body>
+</html>
